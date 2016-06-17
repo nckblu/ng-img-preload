@@ -18,7 +18,7 @@
                 img.src = scope.imageUrl;
 
                 if (img.complete) {
-                    imageLoaded();
+                    loaded();
                     img.onload = function() {};
                 } else {
                     img.onload = function() {
